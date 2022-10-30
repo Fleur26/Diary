@@ -7,6 +7,8 @@ namespace DiaryLibrary.Model
     /// <summary>
     /// User's field 
     /// </summary>
+    /// 
+    [Serializable]
     class User
     {
         #region fields
