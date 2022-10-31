@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DiaryLibrary.Model;
+using System;
 
 namespace Diary
 {
@@ -6,12 +7,15 @@ namespace Diary
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello there, this is \"Diary\"\nplease, write your name");
+            Console.WriteLine("Hello there, this is \"Diary\"");
+
+            Console.WriteLine("Pleaase write your name");
             var name = Console.ReadLine();
             if (name.Length <= 1)
             {
 
             }
+
         }
     }
 }

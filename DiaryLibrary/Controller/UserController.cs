@@ -10,9 +10,11 @@ namespace DiaryLibrary.Controller
     class UserController
     {
         public User User { get; }
-        public UserController(User user)
-        {                 
-            User = user ?? throw new ArgumentNullException("User can not be null", nameof(user));
+        public UserController(string userName,string genderName, DateTime birthday, double weight)
+        {
+            var gender = new Gender(genderName);
+            User = new User(userName, gender, birthday, weight);
+           
         }
         /// <summary>
         /// Date of user saving 
